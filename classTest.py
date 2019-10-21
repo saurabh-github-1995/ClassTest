@@ -1,4 +1,4 @@
-#initializing empty student list
+#initializing empty student list which will containe number of dictionaries of student data
 studentsList=[]
 
 #function for sorting student list using bubble sort and recursion
@@ -9,15 +9,13 @@ def sortList():
            studentsList[i]["number"],studentsList[i+1]["number"]=studentsList[i+1]["number"],studentsList[i]["number"]
            sortList()
 
-            #function for mregisterenig stuent
+#function for mregisterenig stuentd one at a time
 def registerStudenrs(student):
     
     studentsList.append(student)
     sortList()
 
-    #function for student with lowest number
+#function for student with lowest number
 def retrive():
     return studentsList[0]
-
-
     
